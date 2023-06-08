@@ -1,0 +1,108 @@
+* {
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+ --webkit-font-smoothing: antialiased
+}
+
+:root {
+  font-size: 62.5%;
+
+  --color-nav: #C4C4CC;
+  --color-text-font: #FFF;
+  --color-text-p-font: #E1E1E6;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  height: 12.2rem;
+  margin-left: 7.2rem;
+}
+
+nav {
+  display: flex;
+  gap: 4.2rem;
+  margin-left: 3.2rem;
+}
+
+nav .selected {
+  font-weight: 700;
+  color: var(--color-text-font);
+}
+
+a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 21.6667px;
+  color: var(--color-nav);
+}
+
+a:hover {
+  font-weight: 700;
+  color: var(--color-text-font);
+}
+
+h1 {
+  color: var(--color-text-font);
+  font-size: 4.8rem;
+  line-height: 125%;
+  margin-bottom: 2.4rem;
+}
+
+p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 160%;
+  color: var(--color-text-p-font);
+}
+
+button {
+  background-color: transparent;
+  color: var(--color-text-font);
+  border: 2px solid var(--color-text-font);
+  padding: 1.2rem 3.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: var(--color-text-font);
+  color: #02799D;
+}
+
+.home {
+  background-image: url("/assets/home.png");
+}
+
+.universe {
+  background-image: url("/assets/universe.png");
+}
+
+.exploration {
+  background-image: url("/assets/exploration.png");
+}
+
+#app {
+  display: flex;
+  text-align: center;
+  min-height: auto;
+}
+
+#home-page {
+  margin: 17.2rem auto;
+}
+
+.text-page {
+  text-align: left;
+  padding: 6.3rem 0 0 10.2rem;
+  max-width: 72rem;
+}
